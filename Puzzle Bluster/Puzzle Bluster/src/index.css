@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  margin: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --button-color : rgb(116, 91, 58);
+  --text-color : white
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #473122;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: white;
+}
+
+.gameHeading {
+  color: rgb(92, 76, 56);
+  white-space: nowrap;
+}
+
+.boardCell {
+  display: inline-flex;
+  background-color: #282941;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5px;
+  width: 50px;
+  height: 40px;
+  transition: background-color 0.1s;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.boardCell:hover {
+  background-color: #646cff;
+  transform: none;
+  box-shadow: none;
+}
+
+.wordList {
+  display: flex;
+  padding: 6px 8px;
+  margin: 10px 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #595959;
+  background-color: #595959;
+  color: #ffffff;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px groove ;
+  padding: 0.6em 1.2em;
+  margin-right: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.25s;
+ 
+}
+
+button:hover {
+  box-shadow: 0 10px 20px -10px #785540;
+  transform: translateY(-5px);
+  background-color: #a47459;
+}
+
+button:disabled:hover {
+  transform: none;
+  box-shadow: initial;
+}
+
+.timerDisplay {
+  width: 100%;
+  text-align: right;
+  font-size: 22px;
+  color: rgb(92, 76, 56);
+  font-weight: bold;
+  font-style: italic;
+  align-self: flex-end;
+}
+
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 450px;
+  height: 180px;
+  background: rgb(211, 188, 166);
+  color: rgb(54, 40, 22);
+  z-index: 10;
+  border-radius: 16px;
+  width: 500px;
+}
+.backButton {
+  margin-right: 10px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.backButton:hover {
+  background-color: rgb(
+    167,
+    132,
+    103
+  ); /* Change to your desired hover background color */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+
+button:disabled {
+  background-color: #b3a08e;
+  cursor: not-allowed;
+}
+
+.puzzle-body {
+  background-color: rgb(198, 169, 134);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
